@@ -10,6 +10,7 @@ if [ ! -d "playbook" ]; then
     mkdir -p playbook/roles
     cd playbook    
     touch {main.yml,hosts}
+    mkdir -p {group_vars,host_vars,inventories}
 
     for rolename in "$@"
     do
